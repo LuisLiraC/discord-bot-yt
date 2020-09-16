@@ -1,0 +1,21 @@
+{
+  "name": "bot-discord-yt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "nodemon --exec ts-node -- src/index.ts"
+  },
+  "author": "LuisLiraC <luisliradev@gmail.com> (https://luislira.xyz/)",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.10.2",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
