@@ -1,4 +1,5 @@
-import { Client, Message } from 'discord.js'
+import { Client, GuildMember, Message, PartialGuildMember } from 'discord.js'
+import newMemberController from './controllers/newMemberController'
 
 class App {
   private client: Client
@@ -16,6 +17,7 @@ class App {
 
   initialize() {
     this.client.on('ready', () => console.log('Bot ready'))
+    this.client.on('guildMemberAdd', newMemberController)
     this.client.on('message', (message: Message) => {
       if (message.author.bot) return
 
